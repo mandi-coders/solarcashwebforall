@@ -1,0 +1,24 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 5px;  
+    border-top-right-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.447); 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.363);
+}  
+
+input.no-arrow::-webkit-inner-spin-button,
+input.no-arrow::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows in Firefox */
+input.no-arrow[type=number] {
+    -moz-appearance: textfield;
+}
